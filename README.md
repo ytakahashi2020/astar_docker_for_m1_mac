@@ -59,7 +59,7 @@ https://github.com/realtakahashi/astar_docker_env?fbclid=IwAR1Eqso1--KG8qyOzQmPs
 
 これを使ってデプロイを行うやり方は、こちらのnoteなどをご参照ください。
 
-https://note.com/standenglish/n/n1459948a4088?magazine_key=m588426b7ac21
+https://note.com/standenglish/n/n1459948a4088
 
 ![Image description](./images/7.png)
 ## 以下は、元のReadmeの内容です。

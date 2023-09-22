@@ -23,7 +23,6 @@ RUN rustup default stable
 RUN rustup update
 RUN rustup update nightly
 RUN rustup target add wasm32-unknown-unknown --toolchain nightly
-RUN rustup component add rust-src --toolchain nightly-aarch64-unknown-linux-gnu
 RUN rustup toolchain install nightly-aarch64-unknown-linux-gnu
 RUN rustup component add rust-src --toolchain nightly-aarch64-unknown-linux-gnu
 RUN rustup default nightly-2023-02-07

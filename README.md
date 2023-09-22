@@ -7,10 +7,12 @@ https://github.com/realtakahashi/astar_docker_env?fbclid=IwAR1Eqso1--KG8qyOzQmPs
 
 まずは、こちらをgit cloneして下さい。
 
-```git clone https://github.com/ytakahashi2020/flipper_docker_for_m1_mac.git```
+```git clone https://github.com/ytakahashi2020/astar_docker_for_m1_mac.git```
 
 次に、こちらのコマンドで、imageをビルドします。
 20 ~ 30分程度かかると思われます。
+
+```cd astar_docker_for_m1_mac```
 
 ```docker build -t astar_dev_env_v1 ./.devcontainer/```
 

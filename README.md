@@ -3,12 +3,15 @@
 
 https://github.com/realtakahashi/astar_docker_env?fbclid=IwAR1Eqso1--KG8qyOzQmPs5YsvKMJxyvOkPeHTS-4_P4M2jcLFjSpqCVmaIc
 
-# 2 
+# 2 実施手順について
+
+## 1 git clone
 
 まずは、こちらをgit cloneして下さい。
 
 ```git clone https://github.com/ytakahashi2020/astar_docker_for_m1_mac.git```
 
+## 2 imageのビルド
 次に、こちらのコマンドで、imageをビルドします。
 20 ~ 30分程度かかると思われます。
 
@@ -16,17 +19,41 @@ https://github.com/realtakahashi/astar_docker_env?fbclid=IwAR1Eqso1--KG8qyOzQmPs
 
 ```docker build -t astar_dev_env_v1 ./.devcontainer/```
 
+![Image description](./images/1.png)
 
+![Image description](./images/2.png)
+
+## 3 コンテナの作成と実行
+
+下のコマンドで実行しています。
+
+ホストのポート9944をコンテナのポート9944にマッピングしています。
 
 ```docker run -it -d -p 9944:9944 --name astar-dev astar_dev_env_v1```
 
+![Image description](./images/3.png)
+
+## 4 ホストディレクトリとのマウントとシェルの起動
+
+ホストのflipper_testディレクトリをコンテナ内の /app ディレクトリにマウントしています。
 
 ```docker run -it -v $(pwd)/flipper_test:/app astar_dev_env_v1 /bin/bash```
 
+![Image description](./images/4.png)
+
+## 5 コントラクトのビルド
+
+次のコマンドで、コントラクトをビルドしています。
 
 ```cd /app/contracts/flipper```
 
 ```cargo +nightly-2023-02-07 contract build```
+
+![Image description](./images/5.png)
+
+![Image description](./images/6.png)
+
+## 以下は、元のReadmeの内容です。
 
 # Description
 - This Dockerfile implements the following environment:

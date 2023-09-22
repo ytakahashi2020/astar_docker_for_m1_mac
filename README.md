@@ -53,6 +53,15 @@ https://github.com/realtakahashi/astar_docker_env?fbclid=IwAR1Eqso1--KG8qyOzQmPs
 
 ![Image description](./images/6.png)
 
+## 6 デプロイ方法
+
+これでデプロイに必要な「~.contract」ファイルが取得できました。
+
+これを使ってデプロイを行うやり方は、こちらのnoteなどをご参照ください。
+
+https://note.com/standenglish/n/n1459948a4088?magazine_key=m588426b7ac21
+
+![Image description](./images/7.png)
 ## 以下は、元のReadmeの内容です。
 
 # Description
